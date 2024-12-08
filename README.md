@@ -1,6 +1,10 @@
 # Spring Batch Study Project
 
 이 프로젝트는 Spring Batch의 핵심 개념과 실무 적용 사례를 학습하기 위한 스터디 프로젝트입니다.
+<br/>
+( https://rift-pigeon-2af.notion.site/spring-batch-152c919e38ed80a6ba78f187a21d4ce6?pvs=4 )
+
+<br/>
 
 ## 1. Spring Batch 선택 이유
 
