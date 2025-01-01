@@ -28,12 +28,16 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// H2 의존성은 한 번만 선언
+	runtimeOnly 'com.h2database:h2'  // 개발 및 테스트용 DB
+
 	compileOnly 'org.projectlombok:lombok'
-	// runtimeOnly 'com.mysql:mysql-connector-j'
 	annotationProcessor 'org.projectlombok:lombok'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.batch:spring-batch-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	testImplementation 'org.assertj:assertj-core'
 }
 
 tasks.named('test') {
